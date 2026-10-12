@@ -1,0 +1,9 @@
+# Agent transcripts and local secrets
+*.jsonl
+.env
+.env.*
+
+# Dependencies and build output
+node_modules/
+dist/
+bin/
