@@ -46,7 +46,7 @@ router.post('/orders', async (req, res) => {
     }
 
     const result = await query(
-      `INSERT INTO orders (customer_name, item, quantity)
+      `INSERT INTO orders (customer, item, quantity)
        VALUES ($1, $2, $3)
        RETURNING *`,
       [customerName.trim(), item.trim(), quantity]
